@@ -446,20 +446,73 @@
 
    <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <p>Моя модалка! Что хочу, то и пишу! <br> Программирование - отстой! <br>А-А-А! А-А-А! Долой программирование!<br>
-            Тоска и скука! <br>Писать книжки намного интереснее!!!</p>
-        <button data-modal-close class="close" type="button">
+
+        <strong class="strong">Оставьте свои данные, мы вам перезвоним</strong>
+
+            <form class="form">
+            <div class="div-form">
+           
+            <div class="form-field">
+                <label class="label" for="name" autofocus>Имя</label>
+                <svg class="icon-form" width="18" height="18">
+                    <use href="./imeges/icons.svg#icon-men"></use>
+                </svg>
+                <input class="input" type="text" name="name" id="name">
+            </div>
+            
+            <div class="form-field">
+                <label class="label" for="tel">Телефон</label>
+                <svg class="icon-form" width="18" height="18">
+                    <use href="./imeges/icons.svg#icon-phone"></use>
+                </svg>
+                <input class="input" type="tel" name="tel" id="tel">
+            </div>
+
+           
+            <div class="form-field">
+                <label class="label" for="mail">Почта</label>
+                <svg class="icon-form" width="18" height="18">
+                    <use href="./imeges/icons.svg#icon-mail"></use>
+                </svg>
+                <input class="input" type="email" name="mail" id="mail">
+            </div>
+
+            <div class="form-field">
+                <label class="label" for="comment">Комментарии</label>
+                <textarea class="comment" name="comment"
+                id="comment" placeholder="Введите текст"></textarea>
+            </div>
+
+            <div class="form-field">
+            <label class="label">
+                <input type="checkbox" name="agreement" value="reading" />
+                Соглашаюсь с рассылкой и принимаю <span class="checkbox-text">Условия договора</span> 
+            </label>
+            </div>
+            
+            
+            <div class="field-button">
+            <button class="form-button" type="submit">Отправить</button>
+            </div>
+
+            </div>
+           
+        </form>
+            
+            <button data-modal-close class="close" type="button">
             <div class="div-close">
             <svg class="icon-footer-end" width="20" height="20">
                 <use href="./imeges/icons.svg#icon-close"></use>
             </svg>
-            </div>
+            </div>                
+            </button>
 
-        </button>
     </div>
    </div>
 
 <script src="./js/modal.js"></script>
+
+
 
 </body>
 </html>
